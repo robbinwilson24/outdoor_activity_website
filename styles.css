@@ -1,0 +1,226 @@
+body {
+  background-color: #004225;
+  font-family: "Nunito", sans-serif;
+  margin-top: 44.6px;
+}
+
+#pageName {
+  color: #eaeaeaeb;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-right: 30px;
+}
+
+.mainNav {
+  font-weight: 200;
+  font-size: 1.2rem;
+  background-color: #004225;
+}
+
+.nav-item>a {
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #4abc9400;
+  border-radius: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: .8rem;
+  font-weight: 300;
+  padding: 2px;
+  width: fit-content;
+  transition: .3s;
+}
+
+.nav-item>a:hover {
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #fafa3300;
+  background-color: #90fa3361;
+  border-radius: 20% 90%;
+  transition: .1s;
+}
+
+.nav-item>a:active {
+  color: rgb(225, 223, 223) !important;
+  background-color: #ffff7d49;
+}
+
+.container-fluid {
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.371);
+}
+
+#bannerImage {
+  object-fit: cover;
+}
+
+.quote-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+#adventureH1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  width: 85vw;
+}
+
+#adventureH3 {
+  font-size: 1.5rem;
+  margin-top: -20px;
+}
+
+.area-head {
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 1vw;
+  cursor: pointer;
+}
+
+.area-head:active {
+  color: rgb(208, 208, 208);
+}
+
+.country_icon {
+  max-width: 50px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.country_description {
+  color: white !important;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 18px;
+}
+
+.mainNav.scrolled {
+  background-color: #2c2f2e;
+  border-bottom: 1px solid #2c2f2e;
+  box-shadow: 1px 1px 1px black;
+  transition: .2s;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+  padding: 0;
+  height: 20px;
+  background-color: #2c2f2e;
+}
+
+.footer-nav-link>a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-nav-link>a:hover {
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .area-head {
+    font-size: 2rem;
+    padding: 5px;
+  }
+
+}
+
+@media screen and (min-width: 921px) {
+  #bannerImage {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .area-head {
+    font-size: 1.6rem;
+  }
+
+  #bannerImage {
+    height: 45vh;
+    width: 100%;
+  }
+
+  img.country_icon {
+    display: none;
+  }
+
+  .country_description {
+    font-size: .85rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  #england-row,
+  #wales-row {
+    flex-wrap: wrap-reverse;
+    padding-top: 10px;
+  }
+
+  #scotland-row,
+  #ireland-row {
+    padding-top: 10px;
+  }
+
+  #england-blurb,
+  #wales-blurb,
+  #scotland-blurb,
+  #ireland-blurb {
+    padding-bottom: .7rem;
+  }
+
+  .country_description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #bannerImage {
+    height: 35vh;
+    width: 100%;
+  }
+
+  #adventureH1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 92vw;
+  }
+
+  #adventureH3 {
+    font-size: .9rem;
+    margin-top: 20px;
+  }
+
+
+
+}
